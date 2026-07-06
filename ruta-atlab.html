@@ -162,16 +162,25 @@ body{font-family:var(--fb);background:var(--g50);color:var(--negro);display:flex
 .ang-t em{color:rgba(255,255,255,.5);font-weight:500;font-style:normal;}
 
 /* RESULTADOS */
-.res-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px;}
-.res-box{border-radius:var(--rlg);padding:30px 28px;}
+.res-compare{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:36px;}
+.res-box{border-radius:var(--rlg);padding:26px 24px;}
 .res-box.actual{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);}
 .res-box.meta{background:var(--azul);}
-.res-box .rl{font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px;}
+.res-box.alt{background:rgba(91,143,232,.14);border:1px solid rgba(91,143,232,.4);}
+.res-box .rl{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin-bottom:12px;}
 .res-box.actual .rl{color:rgba(255,255,255,.4);}
 .res-box.meta .rl{color:rgba(255,255,255,.75);}
-.res-box .rv{font-family:var(--fd);font-size:2.6rem;font-weight:900;color:#fff;line-height:1;}
-.res-box .rd{font-size:12px;color:rgba(255,255,255,.5);margin-top:8px;line-height:1.5;}
+.res-box.alt .rl{color:var(--azul);}
+.res-box .rv{font-family:var(--fd);font-size:2.2rem;font-weight:900;color:#fff;line-height:1;}
+.res-box .rd{font-size:11.5px;color:rgba(255,255,255,.5);margin-top:8px;line-height:1.5;}
 .res-box.meta .rd{color:rgba(255,255,255,.85);}
+.res-box.alt .rd{color:rgba(255,255,255,.6);}
+.alt-block{margin-top:44px;padding-top:36px;border-top:1px solid rgba(255,255,255,.1);}
+.alt-h{display:flex;align-items:baseline;gap:12px;margin-bottom:24px;flex-wrap:wrap;}
+.alt-h .n{font-family:var(--fd);font-size:2rem;font-weight:900;color:var(--azul);}
+.alt-h .d{font-size:12.5px;color:rgba(255,255,255,.45);}
+.eff-note{margin-top:22px;padding:18px 22px;background:rgba(91,143,232,.08);border:1px solid rgba(91,143,232,.25);border-radius:var(--rmd);font-size:13px;color:rgba(255,255,255,.65);line-height:1.65;}
+.eff-note strong{color:#fff;}
 .palanca-g{display:flex;flex-direction:column;gap:10px;margin-bottom:36px;}
 .pal-row{display:flex;align-items:center;gap:18px;padding:16px 22px;background:rgba(255,255,255,.04);border-radius:var(--rmd);}
 .pal-l{flex:1;font-size:13px;color:rgba(255,255,255,.65);}
@@ -446,9 +455,14 @@ body{font-family:var(--fb);background:var(--g50);color:var(--negro);display:flex
           <div class="rd">2.000 conversaciones/mes · $3.500 por conversación</div>
         </div>
         <div class="res-box meta">
-          <div class="rl">Inversión propuesta</div>
+          <div class="rl">Propuesta A</div>
           <div class="rv">$5.400.000</div>
-          <div class="rd">Mismas 2.000 conversaciones/mes · $2.700 por conversación (mejor segmentación y creatividad)</div>
+          <div class="rd">2.000 conversaciones/mes · $2.700 por conversación · 60 atletas/mes</div>
+        </div>
+        <div class="res-box alt">
+          <div class="rl">Propuesta B</div>
+          <div class="rv">$3.500.000</div>
+          <div class="rd">1.296 conversaciones/mes · $2.700 por conversación · 39 atletas/mes</div>
         </div>
       </div>
 
@@ -487,7 +501,32 @@ body{font-family:var(--fb);background:var(--g50);color:var(--negro);display:flex
       </div>
 
       <div class="hero-result">
-        <div class="hrt">Con <span>$1.600.000 menos</span> al mes, <span>10 atletas más</span> y el costo de adquisición baja de $140.000 a <span>$90.000</span> (-36%).</div>
+        <div class="hrt">Propuesta A: con <span>$1.600.000 menos</span> al mes, <span>10 atletas más</span> y el costo de adquisición baja de $140.000 a <span>$90.000</span> (-36%).</div>
+      </div>
+
+      <div class="alt-block">
+        <div class="alt-h"><span class="n">Propuesta B — $3.500.000</span><span class="d">mismas tasas de conversión, menor escala de inversión</span></div>
+        <div class="ebar-row">
+          <div class="ebar-label">Conversaciones WhatsApp</div>
+          <div class="ebar-track"><div class="ebar-fill" style="width:100%;background:rgba(91,143,232,.55)">1.296 <span>100%</span></div></div>
+          <div class="ebar-meta"><div class="c">$2.700</div><div class="l">por conversación</div></div>
+        </div>
+        <div class="ebar-row">
+          <div class="ebar-label">Perfilados para clase gratis</div>
+          <div class="ebar-track"><div class="ebar-fill" style="width:18%;background:rgba(91,143,232,.55)">233 <span>18%</span></div></div>
+          <div class="ebar-meta"><div class="c">$15.021</div><div class="l">por perfilado</div></div>
+        </div>
+        <div class="ebar-row">
+          <div class="ebar-label">Asisten a la clase</div>
+          <div class="ebar-track"><div class="ebar-fill" style="width:9%;background:rgba(91,143,232,.55)">117 <span>9%</span></div></div>
+          <div class="ebar-meta"><div class="c">$29.915</div><div class="l">por asistente</div></div>
+        </div>
+        <div class="ebar-row">
+          <div class="ebar-label">Se inscriben (atletas)</div>
+          <div class="ebar-track"><div class="ebar-fill" style="width:3%">39 <span>3%</span></div></div>
+          <div class="ebar-meta"><div class="c">$89.700</div><div class="l">por atleta</div></div>
+        </div>
+        <div class="eff-note"><strong>El costo por atleta se mantiene casi igual</strong> ($89.700 vs. $90.000 en la Propuesta A) porque las tasas de conversión no cambian — solo el volumen. Con menos presupuesto se consiguen menos atletas (39 vs. 60), pero con la misma eficiencia por peso invertido.</div>
       </div>
     </div>
   </section>
