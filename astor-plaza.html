@@ -467,6 +467,23 @@ body.locked{overflow:hidden}
 .conds b{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#2f5fb8;margin-bottom:5px}
 .conds p{font-size:.84rem;color:#444}
 @media(max-width:900px){.conds{grid-template-columns:1fr}}
+.plans{max-width:1040px;margin:34px auto 0}
+.plans h3{font-size:clamp(1.3rem,2.4vw,1.7rem);font-weight:900;letter-spacing:-.04em;margin-bottom:6px}
+.plans>p{font-size:.9rem;color:var(--muted-light);margin-bottom:16px}
+.plans-t{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line-light);border-radius:20px;overflow:hidden;font-size:.9rem}
+.plans-t th,.plans-t td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line-light);vertical-align:middle}
+.plans-t tr:last-child th,.plans-t tr:last-child td{border-bottom:0}
+.plans-t thead th{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#2f5fb8}
+.plans-t thead th.pl{text-align:center;width:150px}
+.plans-t thead th.pl b{display:block;font-size:1.25rem;letter-spacing:-.04em;text-transform:none;color:var(--ink);font-weight:900}
+.plans-t td.c{text-align:center;font-weight:900;font-size:1.05rem}
+.plans-t td.c.y{color:var(--blue)}
+.plans-t td.c.n{color:#b9b9b9}
+.plans-t td small{display:block;font-size:.76rem;color:var(--muted-light);margin-top:2px}
+.plans-t tfoot td{background:var(--ink);color:#fff;font-weight:800}
+.plans-t tfoot td.c{font-size:1.1rem;letter-spacing:-.03em}
+.plans-note{margin-top:12px;font-size:.8rem;color:var(--muted-light)}
+@media(max-width:640px){.plans-t th,.plans-t td{padding:12px 10px}.plans-t thead th.pl{width:88px}.plans-t thead th.pl b{font-size:1rem}}
 
 /* ---------- TELÓN FINAL ---------- */
 .finale{text-align:center}
@@ -952,6 +969,25 @@ footer{padding:26px 16px;text-align:center;font-size:.72rem;color:#666;border-to
       <div><b>Modalidad</b><p>Fee mensual por prestación de servicios, sin un plazo fijo. La Temporada 1 es la hoja de ruta de trabajo, no un compromiso de permanencia.</p></div>
     </div>
     </div></div>
+    </div>
+    <div class="plans reveal">
+      <h3>Dos opciones de alcance</h3>
+      <p>Lo que incluye cada valor de honorarios mensuales.</p>
+      <table class="plans-t">
+        <thead><tr><th>Servicio</th><th class="pl">Completo<b>$3.500.000</b></th><th class="pl">Esencial<b>$3.000.000</b></th></tr></thead>
+        <tbody>
+          <tr><td>Estrategia digital<small>Hoja de ruta para llevar las ventas a entradasdeteatro.co</small></td><td class="c y">✓</td><td class="c y">✓</td></tr>
+          <tr><td>Dirección y ejecución de pauta<small>Meta, Google, YouTube y TikTok</small></td><td class="c y">✓</td><td class="c y">✓</td></tr>
+          <tr><td>Planeación de medios por evento<small>Calendario, canales, audiencias y costo máximo por boleta</small></td><td class="c y">✓</td><td class="c y">✓</td></tr>
+          <tr><td>Configuración de la medición<small>Plan de acción e implementación con el equipo técnico: píxel, API de conversiones, GA4 y UTMs</small></td><td class="c y">✓</td><td class="c n">—</td></tr>
+          <tr><td>Dashboard en vivo y análisis de datos<small>Boletas contra meta, costo por boleta, ROAS, canal y pieza</small></td><td class="c y">✓</td><td class="c y">✓</td></tr>
+          <tr><td>Lineamientos gráficos basados en data<small>Briefs para el productor y el diseñador de Altavista</small></td><td class="c y">✓</td><td class="c n">—</td></tr>
+          <tr><td>Tráfico semanal<small>Máximo 2 horas a la semana con el equipo interno</small></td><td class="c y">✓</td><td class="c y">✓</td></tr>
+          <tr><td>Informe mensual<small>Resultados, aprendizajes y acciones</small></td><td class="c y">✓</td><td class="c y">✓</td></tr>
+        </tbody>
+        <tfoot><tr><td>Honorarios netos mensuales</td><td class="c">$3.500.000</td><td class="c">$3.000.000</td></tr></tfoot>
+      </table>
+      <p class="plans-note">En la opción Esencial, la configuración de la medición en entradasdeteatro.co y el diseño de las piezas quedan a cargo del equipo de Grupo Altavista. Las demás condiciones (valor neto, conectores del dashboard, pauta aparte y modalidad) aplican igual a las dos opciones.</p>
     </div>
   </div>
 </section>
